@@ -1,0 +1,10 @@
+<div *ngIf="showModal" class="modalWindow">
+    <div class="container">
+        <h2 class="modalTitle">Create a folder</h2>
+        <div class="modalForm">
+            <input type="text" [ngClass] = "!isValid ? 'error' : '' " placeholder="Enter folder name" name="foldername" [(ngModel)]="name"><br/>
+            <button (click)="create()">Create</button>
+            <button (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>

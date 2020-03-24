@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-left: 200px;
+}
+.block{
+    margin-right: 40px;
+}
+.icon{
+    width: 100px;
+    vertical-align: middle;
+}
+.fileName{
+    text-align: center;
+}
+.list{
+    width: 200px;
+    padding: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.listView{
+    margin-left: 200px;
+}

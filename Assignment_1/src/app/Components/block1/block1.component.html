@@ -1,0 +1,19 @@
+<h2>Reactive form</h2>
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div >
+        <label>User Name </label>
+        <input type="text" id="username" formControlName="username"/>
+    </div>
+    <div>
+        <label>Email </label>
+        <input type="text" id="email" formControlName="email"/>
+    </div>
+    <span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">Please enter valid email</span>
+    <div class="radio" *ngFor="let gender of genders">
+        <label>
+            <input type="radio" [value] ="gender" formControlName="gender"/>{{gender}}
+        </label>
+    </div>
+    <input type="submit" value="Submit">
+</form>

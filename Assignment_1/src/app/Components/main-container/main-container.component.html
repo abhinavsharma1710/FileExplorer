@@ -1,0 +1,25 @@
+<app-folder-modal></app-folder-modal>
+<app-file-modal></app-file-modal>
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="container" *ngIf="gridView">
+    <div *ngFor="let obj of arr" class="block">
+        <img src={{obj.icon}} class="icon"/>
+        <div class="fileName">{{obj.name}}</div>
+    </div>
+</div>
+
+<div class="container1" *ngIf="!gridView">
+    <div class="container">
+        <div class="list">Name</div>
+        <div class="list">Creation Date</div>
+        <div class="list">Type</div>
+        <div class="list">Size</div>
+    </div>
+    <div *ngFor="let obj of arr" class="listView">
+        <div class="list"> <img src={{obj.icon}} class="icon"/>{{obj.name}}</div>
+        <div class="list">{{today | date}}</div>
+        <div class="list">{{obj.type | titlecase}}</div>
+        <div class="list">1Kb</div>
+    </div>
+</div>

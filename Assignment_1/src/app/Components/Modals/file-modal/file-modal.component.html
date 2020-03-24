@@ -1,0 +1,10 @@
+<div *ngIf="showModal" class="modalWindow">
+    <div class="container">
+        <h2 class="modalTitle">Create a file</h2>
+        <div class="modalForm">
+            <input type="text" [ngClass] = "!isValid ? 'error' : '' " placeholder="Enter file name" name="filename" [(ngModel)]="name"><br/>
+            <button (click)="create()">Create</button>
+            <button (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>

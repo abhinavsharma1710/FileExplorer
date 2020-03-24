@@ -1,0 +1,23 @@
+.sidebar{
+    position: fixed;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    height: 100%;
+    background-color: dimgrey;
+    color: #fff;
+    width: 200px;
+}
+.icon{
+    width: 50px;
+    vertical-align: middle;
+}
+ul{
+    padding-left: 0;
+}
+li:hover{
+    background-color: #c7c5c5;
+}
+.title{
+    padding-left: 10px;
+    font-size: 16px;
+}
